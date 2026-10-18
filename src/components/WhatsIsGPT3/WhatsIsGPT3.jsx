@@ -1,5 +1,4 @@
-import React from 'react';
-import './WhatIsGPT3.css';
+import '../WhatsIsGPT3/WhatsIsGPT3.css';
 
 function WhatIsGPT3() {
   return (
