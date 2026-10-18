@@ -6,7 +6,6 @@ import Footer from './components/Footer/footer';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import "./App.css";
-import WhatIsGPT3 from "./components/WhatsIsGPT3/WhatsIsGPT3";
 import Features from "./components/Features/Features";
 
 function App() {
