@@ -1,0 +1,63 @@
+.nv-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+.nv-left,
+.nv-right {
+  display: flex;
+  align-items: center;
+}
+
+.nv-left { gap: 48px; }
+.nv-right { gap: 36px; }
+
+.nv-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.nv-links {
+  display: flex;
+  gap: 38px;
+}
+
+.nv-links a,
+.nv-signin {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nv-btn {
+  background: #ff4820;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  height: 40px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.nv-btn:hover {
+  filter: brightness(1.1);
+}
+
+
+@media (max-width: 900px) {
+  .nv-links { display: none; }
+}
+
+@media (max-width: 480px) {
+  .nv-signin { display: none; }
+}
