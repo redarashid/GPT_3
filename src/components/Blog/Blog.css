@@ -1,0 +1,137 @@
+.gpt3-blog {
+  background: #040c18;
+  padding: 7rem 6rem 6.5rem;
+}
+.gpt3-blog__heading {
+  margin: 0 0 6rem;
+}
+
+.gpt3-blog__container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1173px;
+}
+.gpt3-blog__groupA {
+  flex: 0.6;
+  display: flex;
+}
+.gpt3-blog__groupB {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 325px;
+  gap: 3rem;
+}
+
+.gpt3-article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #042c54;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.gpt3-article:hover {
+  transform: translateY(-4px);
+}
+
+.gpt3-article__img {
+  flex: none;
+  height: 131px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.gpt3-article--featured .gpt3-article__img {
+  height: 290px;
+}
+
+.gpt3-article__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.gpt3-article--featured .gpt3-article__content {
+  padding: 3rem 1.5rem 2.5rem;
+}
+
+.gpt3-article__date {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #f0f2f4;
+}
+.gpt3-article__title {
+  margin: 1.5rem 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #f0f2f4;
+}
+.gpt3-article--featured .gpt3-article__title {
+  font-size: 26px;
+}
+.gpt3-article__link {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #f0f2f4;
+}
+
+.blog1 {
+  background:
+    url("/images/blog1.jpg") center/cover no-repeat,
+    radial-gradient(
+      ellipse at 48% 50%,
+      #e9fdff 0 7%,
+      #3fc4e6 20%,
+      #0b4a7a 48%,
+      #02101f 100%
+    );
+}
+.blog2 {
+  background:
+    url("/images/blog2.jpg") center/cover no-repeat,
+    radial-gradient(
+      ellipse at 75% 50%,
+      #37d6f0 0 10%,
+      #0b4f86 45%,
+      #020b17 100%
+    );
+}
+.blog3 {
+  background:
+    url("/images/blog3.jpg") center/cover no-repeat,
+    radial-gradient(ellipse at 60% 50%, #bdf4ff 0 8%, #1498c5 32%, #03223f 80%);
+}
+.blog4 {
+  background:
+    url("/images/blog4.jpg") center/cover no-repeat,
+    linear-gradient(180deg, #0a6fb0, #04294d 70%, #02101f);
+}
+.blog5 {
+  background:
+    url("/images/blog5.jpg") center/cover no-repeat,
+    linear-gradient(120deg, #052a50 0 40%, #020509 40% 60%, #0a5d9c 60%);
+}
+
+@media (max-width: 1000px) {
+  .gpt3-blog {
+    padding: 5rem 2rem;
+  }
+  .gpt3-blog__container {
+    flex-direction: column;
+  }
+  .gpt3-blog__groupA {
+    flex: none;
+  }
+}
+@media (max-width: 600px) {
+  .gpt3-blog__groupB {
+    grid-template-columns: 1fr;
+  }
+}

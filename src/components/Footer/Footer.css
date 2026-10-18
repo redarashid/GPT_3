@@ -1,0 +1,129 @@
+
+.gpt3-footer {
+  background: #031b34;
+  padding: 10rem 6rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.gpt3-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gpt3-cta h1 {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 0 4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1.8px;
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    100deg,
+    #b45bff 0%,
+    #d779b8 50%,
+    #ff9169 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gpt3-cta button {
+  padding: 18px 24px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.gpt3-cta button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.gpt3-footer__links {
+  display: grid;
+  grid-template-columns: 402px 234px 273px 1fr;
+  max-width: 1030px;
+  margin: 11rem auto 0;
+  text-align: left;
+}
+
+.gpt3-footer__logo h2 {
+  margin: 0 0 1.75rem;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f0f2f4;
+}
+
+.gpt3-footer__logo p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f0f2f4;
+}
+
+.gpt3-footer__col h4 {
+  margin: 0 0 31px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #f0f2f4;
+}
+
+.gpt3-footer__col p {
+  margin: 0 0 20px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #f0f2f4;
+  cursor: default;
+}
+
+.gpt3-footer__copy {
+  margin: 6rem 0 0;
+  text-align: center;
+  font-size: 11px;
+  line-height: 21px;
+  color: #f0f2f4;
+}
+
+@media (max-width: 1000px) {
+  .gpt3-footer {
+    padding: 6rem 2rem 1.5rem;
+  }
+
+  .gpt3-footer__links {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 6rem;
+  }
+
+  .gpt3-cta h1 {
+    font-size: 44px;
+    letter-spacing: -1.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gpt3-footer__links {
+    grid-template-columns: 1fr;
+  }
+
+  .gpt3-cta h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: -1px;
+  }
+}
