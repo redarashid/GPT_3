@@ -1,8 +1,16 @@
+
 .nv-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
+  padding: 32px clamp(20px, 7vw, 92px) 0;
+  background: transparent;
   color: white;
   font-family: "Manrope", sans-serif;
 }
@@ -52,7 +60,6 @@
 .nv-btn:hover {
   filter: brightness(1.1);
 }
-
 
 @media (max-width: 900px) {
   .nv-links { display: none; }
