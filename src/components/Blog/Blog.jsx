@@ -63,7 +63,7 @@ function Article({ post, featured = false }) {
 export default function Blog() {
   return (
     <section className="gpt3-blog">
-      <h1 className="gradient-text gpt3-blog__heading">
+      <h1 className="gpt3-blog__heading">
         A lot is happening,
         <br />
         We are blogging about it.

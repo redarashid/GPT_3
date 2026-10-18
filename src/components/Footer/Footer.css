@@ -1,7 +1,10 @@
+
 .gpt3-footer {
   background: #031b34;
-  padding: 5rem 6rem 1.5rem; /* كان 10rem */
+  padding: 5rem 6% 1.5rem;
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .gpt3-cta {
@@ -9,37 +12,45 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .gpt3-cta h1 {
   max-width: 900px;
   width: 100%;
-  margin: 0 0 2.5rem; /* كان 4rem */
+  margin: 0 0 2.5rem;
   font-family: "Poppins", sans-serif;
-  font-size: 56px;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -1.8px;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .gradient-text {
-  background: linear-gradient(100deg, #b45bff 0%, #d779b8 50%, #ff9169 100%);
+  background: linear-gradient(
+    100deg,
+    #b45bff 0%,
+    #d779b8 50%,
+    #ff9169 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gpt3-cta button {
-  padding: 18px 24px;
+  padding: 16px 24px;
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 1.5;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
+  max-width: 100%;
 }
 
 .gpt3-cta button:hover {
@@ -48,77 +59,144 @@
 
 .gpt3-footer__links {
   display: grid;
-  grid-template-columns: 402px 234px 273px 1fr;
-  max-width: 1030px;
-  margin: 5rem auto 0; /* كان 11rem (ده أهم تعديل) */
+  grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 5rem auto 0;
   text-align: left;
+}
+
+.gpt3-footer__logo,
+.gpt3-footer__col {
+  min-width: 0;
 }
 
 .gpt3-footer__logo h2 {
   margin: 0 0 1.75rem;
-  font-size: 40px;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
   line-height: 1.2;
   color: #f0f2f4;
+  overflow-wrap: anywhere;
 }
 
 .gpt3-footer__logo p {
   margin: 0;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 1.7;
   color: #f0f2f4;
 }
 
 .gpt3-footer__col h4 {
-  margin: 0 0 31px;
-  font-size: 20px;
+  margin: 0 0 1.5rem;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.4;
   color: #f0f2f4;
+  overflow-wrap: break-word;
 }
 
 .gpt3-footer__col p {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   font-size: 13px;
-  line-height: 21px;
+  line-height: 1.7;
   color: #f0f2f4;
   cursor: default;
+  overflow-wrap: anywhere;
 }
 
 .gpt3-footer__copy {
-  margin: 3rem 0 0; /* كان 6rem */
+  margin: 3rem 0 0;
+  padding-top: 1rem;
   text-align: center;
-  font-size: 11px;
-  line-height: 21px;
+  font-size: 12px;
+  line-height: 1.7;
   color: #f0f2f4;
 }
 
-/* ================= Responsive ================= */
-@media (max-width: 1000px) {
+/* Tablet */
+@media (max-width: 1024px) {
   .gpt3-footer {
-    padding: 4rem 2rem 1.5rem; /* كان 6rem */
+    padding: 4rem 5% 1.5rem;
   }
 
   .gpt3-footer__links {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    margin-top: 3rem; /* كان 6rem */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem 2rem;
+    margin-top: 4rem;
+  }
+
+  .gpt3-footer__logo {
+    grid-column: 1 / -1;
   }
 
   .gpt3-cta h1 {
-    font-size: 44px;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.2px;
   }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
-  .gpt3-footer__links {
-    grid-template-columns: 1fr;
+  .gpt3-footer {
+    padding: 3rem 1.25rem 1.25rem;
   }
 
   .gpt3-cta h1 {
-    font-size: 32px;
+    font-size: clamp(1.8rem, 7vw, 2.25rem);
     line-height: 1.3;
-    letter-spacing: -1px;
+    letter-spacing: -0.7px;
+    margin-bottom: 2rem;
+  }
+
+  .gpt3-cta button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .gpt3-footer__links {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .gpt3-footer__logo {
+    grid-column: auto;
+  }
+
+  .gpt3-footer__logo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .gpt3-footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .gpt3-footer__col p {
+    margin-bottom: 0.85rem;
+  }
+
+  .gpt3-footer__copy {
+    margin-top: 2rem;
+    font-size: 11px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .gpt3-footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .gpt3-cta h1 {
+    font-size: 1.7rem;
+  }
+
+  .gpt3-footer__logo h2 {
+    font-size: 1.75rem;
   }
 }

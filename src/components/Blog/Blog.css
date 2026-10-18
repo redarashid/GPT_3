@@ -1,11 +1,20 @@
 .gpt3-blog {
   background: #040c18;
-  padding: 7rem 6rem 6.5rem;
+  padding: 3rem 6rem 3rem;
 }
+
 .gpt3-blog__heading {
-  margin: 0 0 6rem;
+  margin: 0 0 3rem;
   width: fit-content;
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
+  font-weight: 700;
+  line-height: 1.25;
+  background: linear-gradient(100deg, #b45bff 0%, #d779b8 50%, #ff9169 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .gpt3-blog__container {
@@ -92,7 +101,7 @@
 /* ================= Responsive ================= */
 @media (max-width: 1000px) {
   .gpt3-blog {
-    padding: 5rem 2rem;
+    padding: 2.5rem 2rem;
   }
   .gpt3-blog__container {
     flex-direction: column;
@@ -102,6 +111,9 @@
   }
 }
 @media (max-width: 600px) {
+  .gpt3-blog__heading {
+    font-size: 32px;
+  }
   .gpt3-blog__groupB {
     grid-template-columns: 1fr;
   }
