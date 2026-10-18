@@ -8,6 +8,8 @@ import Hero from './components/Hero/Hero';
 function App() {
   return (
     <>
+    <Navbar />
+    <Hero />
     <WhatIsGPT3 />;
     <Blog />
     <Footer />
