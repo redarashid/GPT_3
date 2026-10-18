@@ -1,7 +1,8 @@
 import "./Hero.css";
+import heroImg from "../../assets/hero.png";
 
 
-function Hero({ imageUrl = "hero.png" }) {
+function Hero({ imageUrl = heroImg }) {
   return (
     <>
     <section className="hr-hero">

@@ -1,18 +1,26 @@
+
 import './App.css';
 import Blog from './components/Blog/Blog';
 import WhatIsGPT3 from './components/WhatsIsGPT3/WhatsIsGPT3';
 import Footer from './components/Footer/footer';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import "./App.css";
+import WhatIsGPT3 from "./components/WhatsIsGPT3/WhatsIsGPT3";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
     <>
-    <WhatIsGPT3 />;
+    <Navbar />
+    <Hero />
+    <WhatIsGPT3 />
+    <Features />
     <Blog />
     <Footer />
      </>
-  ) 
-    
-    
-}
+  ); 
+}      
+  
 
 export default App;
