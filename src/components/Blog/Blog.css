@@ -4,6 +4,8 @@
 }
 .gpt3-blog__heading {
   margin: 0 0 6rem;
+  width: fit-content;
+  font-size: 50px;
 }
 
 .gpt3-blog__container {
@@ -39,8 +41,13 @@
 .gpt3-article__img {
   flex: none;
   height: 131px;
-  background-size: cover !important;
-  background-position: center !important;
+  overflow: hidden;
+}
+.gpt3-article__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .gpt3-article--featured .gpt3-article__img {
   height: 290px;
@@ -82,43 +89,7 @@
   color: #f0f2f4;
 }
 
-.blog1 {
-  background:
-    url("/images/blog1.jpg") center/cover no-repeat,
-    radial-gradient(
-      ellipse at 48% 50%,
-      #e9fdff 0 7%,
-      #3fc4e6 20%,
-      #0b4a7a 48%,
-      #02101f 100%
-    );
-}
-.blog2 {
-  background:
-    url("/images/blog2.jpg") center/cover no-repeat,
-    radial-gradient(
-      ellipse at 75% 50%,
-      #37d6f0 0 10%,
-      #0b4f86 45%,
-      #020b17 100%
-    );
-}
-.blog3 {
-  background:
-    url("/images/blog3.jpg") center/cover no-repeat,
-    radial-gradient(ellipse at 60% 50%, #bdf4ff 0 8%, #1498c5 32%, #03223f 80%);
-}
-.blog4 {
-  background:
-    url("/images/blog4.jpg") center/cover no-repeat,
-    linear-gradient(180deg, #0a6fb0, #04294d 70%, #02101f);
-}
-.blog5 {
-  background:
-    url("/images/blog5.jpg") center/cover no-repeat,
-    linear-gradient(120deg, #052a50 0 40%, #020509 40% 60%, #0a5d9c 60%);
-}
-
+/* ================= Responsive ================= */
 @media (max-width: 1000px) {
   .gpt3-blog {
     padding: 5rem 2rem;
